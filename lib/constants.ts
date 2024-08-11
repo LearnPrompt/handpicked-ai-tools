@@ -21,10 +21,10 @@ export const RevalidateOneMonth = 3600 * 24 * 30;
 export const PAGE_SIZE = 20;
 export const InfoPageSize = 12;
 
-export const FORM_PLACEHOLDER = 'https://tap4.ai/';
+export const FORM_PLACEHOLDER = 'https://tools.learnprompt.pro/';
 
 export const WEBSITE_EXAMPLE =
-  '<a href="https://tap4.ai/" title="Tap4 AI Tools Directory">Tap4 AI Tools Diresctory</a>';
+  '<a href="https://tools.learnprompt.pro/" title="Handpicked AI Tools Directory">Handpicked AI Tools Diresctory</a>';
 
 export const STARTUP_LIST = [
   {
