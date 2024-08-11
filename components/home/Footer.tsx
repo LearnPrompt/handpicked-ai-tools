@@ -1,32 +1,6 @@
-import { HTMLAttributeAnchorTarget } from 'react';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { CONTACT_US_EMAIL } from '@/lib/env';
-
-function InfoLink({
-  href,
-  title,
-  target,
-  type,
-}: {
-  href: string;
-  title: string;
-  target?: HTMLAttributeAnchorTarget;
-  type?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      title={title}
-      className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'
-      target={target}
-      type={type}
-    >
-      {title}
-    </Link>
-  );
-}
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -34,22 +8,7 @@ export default function Footer() {
   const SupportLinks = [
     {
       title: t('tap4'),
-      href: 'https://www.tap4.ai',
-    },
-    {
-      title: t('tattoo'),
-      href: 'https://tattooai.design',
-    },
-  ];
-
-  const INFO_LIST = [
-    {
-      title: t('privacy'),
-      href: '/privacy-policy',
-    },
-    {
-      title: t('termsConditions'),
-      href: '/terms-of-service',
+      href: 'https://www.learnprompt.pro/',
     },
   ];
 
@@ -77,9 +36,6 @@ export default function Footer() {
             ))}
           </div>
           <div className='grid grid-cols-2 gap-x-10 gap-y-5 lg:grid-cols-1 lg:gap-3'>
-            {INFO_LIST.map((item) => (
-              <InfoLink key={item.href} href={item.href} title={item.title} />
-            ))}
             <a
               href={`mailto:${CONTACT_US_EMAIL}`}
               className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'
