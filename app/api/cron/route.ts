@@ -79,8 +79,8 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET(req: NextRequest) {
-  // 创建一个模拟的请求对象，手动设置 Authorization 头部
-  const authHeader = `Bearer cloudflare`; // 使用环境变量中的密钥
+  // 使用环境变量中的 CRON_SECRET 作为 Authorization 头部
+  const authHeader = `Bearer ${process.env.CRON_AUTH_KEY}`; // 确保使用正确的环境变量
   const simulatedReq = new NextRequest(req.url, {
     method: 'POST', // 模拟为 POST 方法
     headers: {
