@@ -77,3 +77,8 @@ export async function POST(req: NextRequest) {
     return Response.json({ error });
   }
 }
+
+export async function GET(req: NextRequest) {
+  // 直接调用 POST 方法的逻辑
+  return await POST(req);
+}
