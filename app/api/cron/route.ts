@@ -18,6 +18,7 @@ export async function POST(req: NextRequest) {
   try {
     // 获取请求头中的 Authorization
     const authHeader = req.headers.get('Authorization');
+    console.log('Authorization Header:', authHeader); // 调试日志
 
     // 检查 Authorization 是否存在并验证 token
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
@@ -74,7 +75,8 @@ export async function POST(req: NextRequest) {
     }
     return NextResponse.json({ message: 'Success' });
   } catch (error) {
-    return Response.json({ error });
+    console.error('Error in POST:', error); // 捕获并记录错误
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
 
