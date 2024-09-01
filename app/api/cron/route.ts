@@ -82,16 +82,23 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET(req: NextRequest) {
-  // 使用环境变量中的 CRON_SECRET 作为 Authorization 头部
-  const authHeader = `Bearer ${process.env.CRON_AUTH_KEY}`; // 确保使用正确的环境变量
-  const simulatedReq = new NextRequest(req.url, {
-    method: 'POST', // 模拟为 POST 方法
-    headers: {
-      ...req.headers,
-      Authorization: authHeader, // 添加 Authorization 头部
-    },
-  });
+  try {
+    const authHeader = `Bearer ${process.env.CRON_AUTH_KEY}`;
+    const simulatedReq = new NextRequest(req.url, {
+      method: 'POST',
+      headers: {
+        ...req.headers,
+        Authorization: authHeader,
+      },
+    });
 
-  // 直接调用 POST 方法的逻辑
-  return await POST(simulatedReq);
+    // 调试日志
+    console.log('Simulated Request:', simulatedReq);
+
+    // 直接调用 POST 方法的逻辑
+    return await POST(simulatedReq);
+  } catch (error) {
+    console.error('Error in GET:', error); // 捕获并记录错误
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
 }
