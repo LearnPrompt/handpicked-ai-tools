@@ -22,14 +22,15 @@ export async function POST(req: NextRequest) {
 
     // 检查 Authorization 是否存在并验证 token
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      console.error('Authorization header is missing or malformed');
       return NextResponse.json({ error: 'Authorization header is missing or malformed' }, { status: 401 });
     }
 
     const token = authHeader.split(' ')[1];
     const cronKey = process.env.CRON_AUTH_KEY;
-    // 假设这里有一个函数 `verifyToken` 用于验证 token，如果验证失败则抛出错误
     const isValid = cronKey === token;
     if (!isValid) {
+      console.error('Invalid token');
       return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
