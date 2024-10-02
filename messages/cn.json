@@ -7,11 +7,11 @@
     "discover": "发现AI",
     "submit": "提交",
     "newtools": "新工具",
-    "startup": "创业公司",
+    "startup": "用户增长",
     "menu": "菜单"
   },
   "Footer": {
-    "title": "人工精选AI工具目录",
+    "title": "Pick AI",
     "subTitle": "发现2024年最佳AI工具，尽在Handpicked AI工具目录！",
     "support": "支持",
     "tap4": "LearnPrompt",
@@ -103,9 +103,9 @@
     "goHome": "回到首页"
   },
   "Home": {
-    "title": "Handpicked AI - 探索最佳AI工具 2024",
+    "title": "Tap4 AI - 最佳 AI 工具集合",
     "subTitle": "在Handpicked AI工具目录中获取您喜欢的AI工具。AI工具列表由GPT-4o每天更新。现在免费提交以增强您的SEO。",
-    "ai-navigate": "AI工具列表",
+    "ai-navigate": "✨最新",
     "exploreMore": "获取更多AI工具",
     "checkDetail": "查看详情",
     "search": "搜索",
@@ -128,14 +128,14 @@
     "success": "成功"
   },
   "Startup": {
-    "title": "启动您的创业公司",
-    "subTitle": "启动和推广您的创业公司网站的终极列表。要添加到列表或帮助提交您的产品到免费列表，请发送电子邮件至：learnprompt2023@gmail.com。",
-    "updateTime": "每天策划和更新。上次更新：",
+    "title": "用户增长提交",
+    "subTitle": "提交您的产品并获取用户的网站列表。要添加到列表或帮助提交您的产品到免费列表，请发送电子邮件至：learnprompt2023@gmail.com。",
+    "updateTime": "列表每日更新。最后更新：",
     "table": {
       "da": "DA",
       "website": "网站",
-      "tags": "标签",
       "price": "价格",
+      "content": "内容",
       "submission": "提交"
     },
     "detail": {

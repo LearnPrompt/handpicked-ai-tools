@@ -7,11 +7,11 @@
     "discover": "發現AI",
     "submit": "提交",
     "newtools": "新工具",
-    "startup": "創業公司",
+    "startup": "用戶增長",
     "menu": "菜單"
   },
   "Footer": {
-    "title": "人工精選AI工具目錄",
+    "title": "Pick AI",
     "subTitle": "發現2024年最佳AI工具，盡在Handpicked AI工具目錄！",
     "support": "支持",
     "tap4": "LearnPrompt",
@@ -103,9 +103,9 @@
     "goHome": "回到首頁"
   },
   "Home": {
-    "title": "Handpicked AI - 探索最佳AI工具 2024",
+    "title": "Tap4 AI - 最佳 AI 工具集合",
     "subTitle": "在Handpicked AI工具目錄中獲取您喜歡的AI工具。AI工具列表由人工精选每周更新。現在免費提交以增強您的SEO。",
-    "ai-navigate": "AI工具列表",
+    "ai-navigate": "✨最新",
     "exploreMore": "獲取更多AI工具",
     "checkDetail": "查看詳情",
     "search": "搜索",
@@ -128,14 +128,14 @@
     "success": "成功"
   },
   "Startup": {
-    "title": "啟動您的創業公司",
-    "subTitle": "啟動和推廣您的創業公司網站的終極列表。要添加到列表或幫助提交您的產品到免費列表，請發送電子郵件至：learnprompt2023@gmail.com。",
-    "updateTime": "每天策劃和更新。上次更新：",
+    "title": "用戶增長提交",
+    "subTitle": "提交您的產品並獲取用戶的網站列表。要添加到列表或幫助提交您的產品到免費列表，請發送電子郵件至：learnprompt2023@gmail.com。",
+    "updateTime": "列表每日更新。最後更新： ",
     "table": {
       "da": "DA",
       "website": "網站",
-      "tags": "標籤",
       "price": "價格",
+      "content": "内容",
       "submission": "提交"
     },
     "detail": {
