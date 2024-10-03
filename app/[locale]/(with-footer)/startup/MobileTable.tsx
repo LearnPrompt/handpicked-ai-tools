@@ -1,10 +1,10 @@
 import { SquareArrowOutUpRight } from 'lucide-react';
+// import TagItem from './TagItem';
 import { useTranslations } from 'next-intl';
 
 import { STARTUP_LIST } from '@/lib/constants';
 
 import PriceItem from './PriceItem';
-import TagItem from './TagItem';
 
 export default function MobileTable() {
   const t = useTranslations('Startup.table');
@@ -22,8 +22,8 @@ export default function MobileTable() {
               <div className='mb-[9px] text-sm'>
                 (DA{item.DA}) {item.Website}
               </div>
-              <div className='mb-[6px] flex flex-wrap gap-1'>
-                {item.Tag ? item.Tag.split(',').map((tag) => <TagItem key={tag} title={tag} />) : null}
+              <div className='mb-[6px] text-sm'>
+                {item.Content} {/* Added content display */}
               </div>
               <PriceItem title={item.Price} isFree={item.Price.toLowerCase() === 'free'} />
             </div>
