@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { CATEGORY_NAME_MAP } from '@/lib/constants';
+
 export function TagItem({ children }: { children: React.ReactNode }) {
   return (
     <div className='flex h-[38px] items-center justify-center gap-[2px] whitespace-nowrap rounded-full bg-[#2C2D36] px-3 text-xs'>
@@ -21,7 +23,7 @@ export function TagList({ data }: { data: { name: string; href: string; id: stri
     <ul className='no-scrollbar flex max-w-full flex-1 items-center gap-3 overflow-auto'>
       {data.map((item) => (
         <li key={item.href}>
-          <TagLink name={item.name} href={item.href} />
+          <TagLink name={CATEGORY_NAME_MAP[item.name]} href={item.href} />
         </li>
       ))}
     </ul>

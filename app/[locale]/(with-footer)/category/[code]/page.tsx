@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: { code: string } })
 export default async function Page({ params }: { params: { code: string } }) {
   const supabase = createClient();
   const [{ data: categoryList }, { data: navigationList, count }] = await Promise.all([
-    supabase.from('navigation_category').select().eq('name', params.code),
+    supabase.from('navigation_category').select().eq('name', params.code).order('sort', { ascending: true }),
     supabase
       .from('web_navigation')
       .select('*', { count: 'exact' })
