@@ -9,6 +9,8 @@ import { formatNumber } from '@/lib/utils/formatNumber';
 export default function WebNavCard({ name, thumbnail_url, title, url, content, monthly_visits }: WebNavigation) {
   const t = useTranslations('Home');
   const formattedVisits = formatNumber(monthly_visits);
+  // 添加 UTM 参数到 url
+  const shareUrl = `${url}?utm_source=pickai-tools&utm_medium=referral`;
 
   return (
     <div className='flex h-[210px] flex-col gap-3 rounded-xl bg-[#5A5A5A] p-1 lg:h-[343px]'>
@@ -26,10 +28,10 @@ export default function WebNavCard({ name, thumbnail_url, title, url, content, m
         </div>
       </Link>
       <div className='flex items-center justify-between px-[6px]'>
-        <a href={url} title={title} target='_blank' rel='nofollow noreferrer' className='hover:opacity-70'>
+        <a href={shareUrl} title={title} target='_blank' rel='nofollow noreferrer' className='hover:opacity-70'>
           <h3 className='line-clamp-1 flex-1 text-sm font-bold lg:text-base'>{title}</h3>
         </a>
-        <a href={url} title={title} target='_blank' rel='nofollow noreferrer' className='hover:opacity-70'>
+        <a href={shareUrl} title={title} target='_blank' rel='nofollow noreferrer' className='hover:opacity-70'>
           <SquareArrowOutUpRight className='size-5' />
           <span className='sr-only'>{title}</span>
         </a>
