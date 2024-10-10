@@ -3,16 +3,17 @@
     "loading": "加載中..."
   },
   "Navigation": {
-    "title": "Handpicked AI工具目錄",
+    "title": "Pick AI工具目錄",
     "discover": "發現AI",
     "submit": "提交",
     "newtools": "新工具",
     "startup": "用戶增長",
-    "menu": "菜單"
+    "menu": "菜單",
+    "blog": "博客"
   },
   "Footer": {
     "title": "Pick AI",
-    "subTitle": "發現2024年最佳AI工具，盡在Handpicked AI工具目錄！",
+    "subTitle": "發現2024年最佳AI工具，盡在Pick AI工具目錄！",
     "support": "支持",
     "tap4": "LearnPrompt",
     "tattoo": "Tap4 AI",
@@ -23,30 +24,30 @@
   "Faq": {
     "title": "常見問題",
     "1": {
-      "question": "Handpicked AI工具目錄是什麼？",
-      "answer": "Handpicked AI工具目錄 - 卡爾的AI沃茨正在建立一個AI工具目錄，幫助您獲取您喜愛的AI工具。您可以在這裡找到AI寫作工具、AI營銷工具、AI改寫工具、AI SEO工具、AI學習工具、AI生成工具、AI研究工具、AI藝術工具、AI音樂工具、AI視頻工具、AI編碼工具、AI照片工具等。"
+      "question": "Pick AI工具目錄是什麼？",
+      "answer": "Pick AI工具目錄 - 卡爾的AI沃茨正在建立一個AI工具目錄，幫助您獲取您喜愛的AI工具。您可以在這裡找到AI寫作工具、AI營銷工具、AI改寫工具、AI SEO工具、AI學習工具、AI生成工具、AI研究工具、AI藝術工具、AI音樂工具、AI視頻工具、AI編碼工具、AI照片工具等。"
     },
     "2": {
-      "question": "如何在Handpicked AI工具目錄中找到您的AI工具？",
-      "answer-1": "1. 打開 tools.learnprompt.pro。",
-      "answer-2": "2. 在Handpicked AI工具目錄中探索AI工具。",
+      "question": "如何在Pick AI工具目錄中找到您的AI工具？",
+      "answer-1": "1. 打開 pickai.tools ",
+      "answer-2": "2. 在Pick AI工具目錄中探索AI工具。",
       "answer-3": "3. 點擊您需要的AI工具以獲取詳情並訪問它。"
     },
     "3": {
-      "question": "Handpicked AI工具目錄的主要功能是什麼？",
+      "question": "Pick AI工具目錄的主要功能是什麼？",
       "answer-1": "1. 免費的AI工具目錄：在這裡免費找到您喜愛的AI工具。",
       "answer-2": "2. 創業公司列表：為AI工具開發者提供免費的創業公司列表。"
     },
     "4": {
-      "question": "提交AI工具到Handpicked AI工具目錄是免費的嗎？",
-      "answer": "是的，目前是免費的。但您應該分享Handpicked AI工具目錄的反向連結！"
+      "question": "提交AI工具到Pick AI工具目錄是免費的嗎？",
+      "answer": "是的，目前是免費的。但您應該分享Pick AI工具目錄的反向連結！"
     },
     "5": {
-      "question": "Handpicked AI工具目錄支持哪些類別的AI工具？",
+      "question": "Pick AI工具目錄支持哪些類別的AI工具？",
       "answer": "我們將來會支持所有類型的AI工具。請稍候幾天。"
     },
     "6": {
-      "question": "Handpicked AI目錄的AI工具更新頻率是多少？",
+      "question": "Pick AI目錄的AI工具更新頻率是多少？",
       "answer": "AI工具列表將每週更新。"
     },
     "7": {
@@ -54,13 +55,13 @@
       "answer": "如果內容未顯示，請嘗試使用其他瀏覽器，清除緩存。如果問題仍然存在，請通過contact@6677.ai聯繫我們。"
     },
     "8": {
-      "question": "Handpicked AI目錄的內容是如何生成的？",
+      "question": "Pick AI目錄的內容是如何生成的？",
       "answer": "AI工具的描述內容是由純人工冩作的，專注高品質。"
     }
   },
   "FooterNavigation": {
     "privacyPolicy": {
-      "1-h1": "Handpicked AI工具目錄隱私政策",
+      "1-h1": "Pick AI工具目錄隱私政策",
       "1-p": "本頁用於告知訪客我的服務收集、使用和披露個人信息的政策。如果您決定使用我的服務，則表示您同意根據本政策收集和使用信息。我收集的個人信息用於提供和改進服務。除非在本隱私政策中描述的情況下，我不會使用或與任何人分享您的信息。本隱私政策中使用的術語與我們的條款和條件中的術語具有相同的含義。",
       "2-h2": "1. 信息收集和使用",
       "2-p": "為了更好的體驗，使用我們的服務時，我可能會要求您提供某些個人身份信息。我請求的信息將保留在您的設備上，並不會以任何方式被我收集。該應用程序使用的第三方服務可能會收集用於識別您的信息。",
@@ -83,22 +84,22 @@
       "8-p": "我可能會不時更新我們的隱私政策。因此，建議您定期查看此頁面的任何更改。我將通過在此頁面上發布新的隱私政策來通知您任何更改。這些更改在此頁面上發布後立即生效。"
     },
     "termsConditions": {
-      "1-h1": "Handpicked AI目錄服務條款",
-      "1-p": "歡迎來到Handpicked AI目錄！我們的網站位於https://Handpicked.ai（\"網站\"），致力於為您提供創建自定義圖像的能力。通過訪問或使用我們的網站，您同意受這些服務條款（\"條款\"）的約束。如果您不同意任何條款，則禁止使用該網站。",
+      "1-h1": "Pick AI目錄服務條款",
+      "1-p": "歡迎來到Pick AI目錄！我們的網站位於 https://pickai.tools，致力於為您提供創建自定義圖像的能力。通過訪問或使用我們的網站，您同意受這些服務條款（\"條款\"）的約束。如果您不同意任何條款，則禁止使用該網站。",
       "2-h2": "1. 使用許可",
       "2-p": "您被授予有限的、非排他性的、不可轉讓的許可，以個人、非商業目的使用本網站及其服務。未經我們事先書面同意，本許可不包括任何複製、修改或分發本網站內容或將其用於商業目的的權利。",
       "3-h2": "2. 所有權",
-      "3-p": "在網站上從文本生成的圖像的所有權屬於創建圖像的人。Handpicked.ai不對用戶創建的圖像聲明所有權。",
+      "3-p": "在網站上從文本生成的圖像的所有權屬於創建圖像的人。pickai.tools 不對用戶創建的圖像聲明所有權。",
       "4-h2": "3. 用戶數據收集",
       "4-p": "我們收集個人數據（姓名、電子郵件和支付信息）和非個人數據（網頁Cookie）以改進我們的服務。使用這些數據受我們的隱私政策的約束，可以在",
       "terms-of-service": "服務條款",
       "5-h2": "4. 管轄法律",
       "5-p": "這些條款應受美國法律管轄並依據其解釋，不考慮其法律衝突規定。",
       "6-h2": "5. 條款更改",
-      "6-p": "Handpicked AI目錄保留在我們全權酌情決定下隨時修改或替換這些條款的權利。我們將通過電子郵件通知用戶任何更改。在這些條款更改後，您繼續使用本網站將構成您接受這些更改。",
+      "6-p": "Pick AI目錄保留在我們全權酌情決定下隨時修改或替換這些條款的權利。我們將通過電子郵件通知用戶任何更改。在這些條款更改後，您繼續使用本網站將構成您接受這些更改。",
       "7-h2": "6. 聯繫信息",
-      "7-p": "如果您對這些條款有任何疑問，請聯繫我們：contact@6677.ai。",
-      "last-p": "使用Handpicked AI目錄即表示您接受這些服務條款。"
+      "7-p": "如果您對這些條款有任何疑問，請聯繫我們：learnprompt2023@gmail.com。",
+      "last-p": "使用Pick AI目錄即表示您接受這些服務條款。"
     }
   },
   "NotFound": {
@@ -121,7 +122,7 @@
   },
   "Submit": {
     "title": "提交您的AI工具",
-    "subTitle": "提交您的AI工具並從Handpicked AI目錄獲取流量",
+    "subTitle": "提交您的AI工具並從Pick AI目錄獲取流量",
     "website": "網站名稱",
     "url": "網站URL",
     "submit": "提交",
@@ -148,26 +149,26 @@
   },
   "Explore": {
     "title": "發現2024年最佳AI工具",
-    "subTitle": "在Handpicked AI工具目錄中找到您喜愛的AI工具。AI工具列表每週由人工精選。"
+    "subTitle": "在Pick AI工具目錄中找到您喜愛的AI工具。AI工具列表每週由人工精選。"
   },
   "Metadata": {
     "home": {
-      "title": "獲取您的最佳AI工具 | Handpicked AI目錄",
-      "description": "Handpicked AI目錄是一款提供免費AI工具目錄的工具。通過Handpicked AI目錄獲取您喜愛的AI工具，Handpicked AI目錄旨在收集所有AI工具並為用戶提供最佳服務。",
-      "keywords": "Handpicked AI目錄"
+      "title": "獲取您的最佳AI工具 | Pick AI目錄",
+      "description": "Pick AI目錄是一款提供免費AI工具目錄的工具。通過Pick AI目錄獲取您喜愛的AI工具，Pick AI目錄旨在收集所有AI工具並為用戶提供最佳服務。",
+      "keywords": "Pick AI目錄"
     },
     "ai": {
-      "titleSubfix": "Handpicked AI目錄"
+      "titleSubfix": "Pick AI目錄"
     },
     "explore": {
-      "title": "2024年最佳AI工具探索 | Handpicked AI目錄",
-      "titlePrefix": "Handpicked AI目錄探索",
-      "titleSuffix": "Handpicked AI目錄",
-      "description": "Handpicked AI目錄是一款提供免費AI工具目錄的工具。通過Handpicked AI目錄獲取您喜愛的AI工具，Handpicked AI目錄旨在收集所有AI工具並為用戶提供最佳服務。",
-      "keywords": "Handpicked AI目錄"
+      "title": "Pick AI - 一站式發現最佳AI工具",
+      "titlePrefix": "Pick AI目錄探索",
+      "titleSuffix": "Pick AI目錄",
+      "description": "Pick AI目錄是一款提供免費AI工具目錄的工具。通過Pick AI目錄獲取您喜愛的AI工具，Pick AI目錄旨在收集所有AI工具並為用戶提供最佳服務。",
+      "keywords": "Pick AI目錄"
     },
     "submit": {
-      "title": "提交您的AI工具並獲取流量 | Handpicked AI目錄"
+      "title": "提交您的AI工具並獲取流量 | Pick AI目錄"
     }
   }
 }

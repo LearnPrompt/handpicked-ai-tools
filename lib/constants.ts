@@ -25,10 +25,10 @@ export const RevalidateOneMonth = 3600 * 24 * 30;
 export const PAGE_SIZE = 20;
 export const InfoPageSize = 12;
 
-export const FORM_PLACEHOLDER = 'https://tools.learnprompt.pro/';
+export const FORM_PLACEHOLDER = 'https://www.pickai.tools';
 
 export const WEBSITE_EXAMPLE =
-  '<a href="https://tools.learnprompt.pro/" title="Handpicked AI Tools Directory">Handpicked AI Tools Diresctory</a>';
+  '<a href="https://www.pickai.tools" title="Pick AI Tools Directory">Pick AI Tools Diresctory</a>';
 
 export const STARTUP_LIST = [
   {
