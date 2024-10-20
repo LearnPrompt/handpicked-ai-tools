@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { createClient } from '@/db/supabase/client';
 import { CircleArrowRight } from 'lucide-react';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { Separator } from '@/components/ui/separator';
 import BaseImage from '@/components/image/BaseImage';
@@ -33,11 +33,64 @@ export async function generateMetadata({
 export default async function Page({ params: { websiteName } }: { params: { websiteName: string } }) {
   const supabase = createClient();
   const t = await getTranslations('Startup.detail');
-  const { data: dataList } = await supabase.from('web_navigation').select().eq('name', websiteName);
-  if (!dataList) {
-    notFound();
+
+  const locale = await getLocale();
+  console.log(locale); // 可能输出 "en" 或 "zh-CN" 等
+
+  const localeMap = {
+    cn: 'zh-CN',
+    tw: 'zh-TW',
+    en: 'en', // Ensure 'en' is mapped to itself
+  };
+
+  const localeNew = locale in localeMap ? localeMap[locale as keyof typeof localeMap] : 'en';
+  console.log(localeNew); // 可能输出 "en" 或 "zh-CN" 等
+
+  let data;
+
+  if (locale === 'en') {
+    // 对于英文，使用原来的查询方式
+    const { data: dataList } = await supabase.from('web_navigation').select().eq('name', websiteName);
+    if (!dataList || dataList.length === 0) {
+      notFound();
+    }
+    [data] = dataList; // 使用数组解构来满足 ESLint 规则
+  } else {
+    // 对于其他语言，使用新的多语言查询方式
+    const { data: dataList, error } = await supabase
+      .from('web_navigation')
+      .select(
+        `
+        *,
+        translations:web_navigation_translations!inner(title, content, detail)
+      `,
+      )
+      .eq('name', websiteName) // Ensure this matches the web_navigation table
+      .eq('translations.web_navigation_name', websiteName) // Ensure this matches the translations table
+      .eq('translations.locale', localeNew)
+      .single();
+
+    if (error) {
+      console.error('Error fetching data:', error);
+    }
+
+    if (!dataList) {
+      console.warn('No data returned for:', websiteName, 'with locale:', localeNew);
+    }
+
+    if (error || !dataList) {
+      notFound();
+    }
+
+    const [translation] = dataList.translations; // 使用数组解构来获取第一个翻译
+
+    data = {
+      ...dataList,
+      title: translation.title,
+      content: translation.content,
+      detail: translation.detail,
+    };
   }
-  const data = dataList[0];
 
   // 添加 UTM 参数到 url
   const visitWebsiteUrl = `${data.url}?utm_source=pickai-tools&utm_medium=referral`;
