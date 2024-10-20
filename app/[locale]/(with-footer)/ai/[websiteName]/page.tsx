@@ -50,7 +50,10 @@ export default async function Page({ params: { websiteName } }: { params: { webs
 
   if (locale === 'en') {
     // 对于英文，使用原来的查询方式
-    const { data: dataList } = await supabase.from('web_navigation').select().eq('name', websiteName);
+    const { data: dataList } = await supabase
+      .from('web_navigation')
+      .select('title, content, url, thumbnail_url, detail')
+      .eq('name', websiteName);
     if (!dataList || dataList.length === 0) {
       notFound();
     }
@@ -61,7 +64,7 @@ export default async function Page({ params: { websiteName } }: { params: { webs
       .from('web_navigation')
       .select(
         `
-        *,
+        url, thumbnail_url,
         translations:web_navigation_translations!inner(title, content, detail)
       `,
       )
@@ -85,15 +88,21 @@ export default async function Page({ params: { websiteName } }: { params: { webs
     const [translation] = dataList.translations; // 使用数组解构来获取第一个翻译
 
     data = {
-      ...dataList,
+      url: dataList.url,
+      thumbnail_url: dataList.thumbnail_url,
       title: translation.title,
       content: translation.content,
       detail: translation.detail,
     };
   }
 
-  // 添加 UTM 参数到 url
-  const visitWebsiteUrl = `${data.url}?utm_source=pickai-tools&utm_medium=referral`;
+  // 去掉前后多余的空格
+  const trimmedUrl = data.url.trim();
+
+  // 生成 shareUrl
+  const visitWebsiteUrl = trimmedUrl.endsWith('/')
+    ? `${trimmedUrl}?utm_source=pickai-tools&utm_medium=referral`
+    : `${trimmedUrl}/?utm_source=pickai-tools&utm_medium=referral`;
 
   return (
     <div className='w-full'>
