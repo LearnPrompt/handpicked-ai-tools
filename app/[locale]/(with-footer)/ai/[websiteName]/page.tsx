@@ -85,7 +85,12 @@ export default async function Page({ params: { websiteName } }: { params: { webs
       notFound();
     }
 
-    const [translation] = dataList.translations; // 使用数组解构来获取第一个翻译
+    const [translation] = dataList.translations || []; // Ensure translations is an array
+
+    if (!translation) {
+      console.warn('No translation found for:', websiteName, 'with locale:', localeNew);
+      notFound();
+    }
 
     data = {
       url: dataList.url,
