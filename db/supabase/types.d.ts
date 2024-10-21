@@ -64,6 +64,29 @@ export type Database = {
         };
         Relationships: [];
       };
+      web_navigation_translations: {
+        Row: {
+          web_navigation_name: string;
+          locale: string;
+          title: string;
+          content: string;
+          detail: string;
+        };
+        Insert: {
+          web_navigation_name: string;
+          locale: string;
+          title: string;
+          content: string;
+          detail: string;
+        };
+        Update: {
+          web_navigation_name?: string;
+          locale?: string;
+          title?: string;
+          content?: string;
+          detail?: string;
+        };
+      };
       web_navigation: {
         Row: {
           category_name: string;
