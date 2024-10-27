@@ -35,7 +35,7 @@ export default async function Page({ params: { websiteName } }: { params: { webs
   const t = await getTranslations('Startup.detail');
 
   const locale = await getLocale();
-  console.log(locale); // 可能输出 "en" 或 "zh-CN" 等
+  // console.log(locale); // 可能输出 "en" 或 "zh-CN" 等
 
   const localeMap = {
     cn: 'zh-CN',
@@ -44,7 +44,7 @@ export default async function Page({ params: { websiteName } }: { params: { webs
   };
 
   const localeNew = locale in localeMap ? localeMap[locale as keyof typeof localeMap] : 'en';
-  console.log(localeNew); // 可能输出 "en" 或 "zh-CN" 等
+  // console.log(localeNew); // 可能输出 "en" 或 "zh-CN" 等
 
   let dataTr;
 
