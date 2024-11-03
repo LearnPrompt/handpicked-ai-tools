@@ -44,9 +44,11 @@ export default function WebNavCardList({ dataList }: { dataList: WebNavigation[]
   }, [locale, dataList, supabase]); // 添加 supabase 到依赖数组
 
   return (
-    <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+    <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
       {translatedDataList.map((item) => (
-        <WebNavCard key={item.id} {...item} />
+        <div key={item.id}>
+          <WebNavCard key={item.id} {...item} />
+        </div>
       ))}
     </div>
   );
