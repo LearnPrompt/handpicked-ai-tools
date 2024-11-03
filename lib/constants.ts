@@ -492,4 +492,7 @@ export const CATEGORY_NAME_MAP: { [key: string]: string } = {
   productivity: 'Productivity',
   other: 'Other',
   'ai-tool-directory': 'AI Tool Directory',
+  'ai-search': 'AI Search',
+  'ai-character': 'AI Character',
+  music: 'Music',
 };
